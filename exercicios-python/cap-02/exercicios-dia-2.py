@@ -1,3 +1,6 @@
+#link dos exercicios: https://python.nilo.pro.br/exercicios3/
+
+
 # Exercicio 1
 
 print(10 + 20 * 30)
@@ -15,7 +18,7 @@ print(int(10 % 3 * 10 ** 2 + 1 - 10 * 4 / 2))
 print("Marcos Antonio Barros Lisboa")
 
 # Exercicio 4
-"""
+
 a = int(input("Insira aqui o valor de 'a': "))
 
 b = int(input("Insira aqui o valor de 'b': "))
@@ -23,7 +26,7 @@ b = int(input("Insira aqui o valor de 'b': "))
 print(f"A resposta para a equação 2a * 3b sendo a = {a} e b = {b} é: {2*a*3*b} ")
 
 # Exercicio 5
-"""
+
 x = 10
 
 y = 18
