@@ -19,9 +19,9 @@ elif media >= nota_minima_rec:
     print(f"\nAluno está de {status}\n")
     nota_rec = float(input("Digite a nota da Recuperação: "))
     mediafinal = (nota_rec + media) / 2
+
 if mediafinal >= 7:
     status = "aprovado recuperação"
-
 else:
     status = "reprovado"
 
