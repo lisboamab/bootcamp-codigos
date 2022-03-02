@@ -20,8 +20,8 @@ elif media >= nota_minima_rec:
     nota_rec = float(input("Digite a nota da Recuperação: "))
     mediafinal = (nota_rec + media) / 2
 
-if mediafinal >= 7:
-    status = "aprovado recuperação"
+    if mediafinal >= 7:
+        status = "aprovado por recuperação"
 else:
     status = "reprovado"
 
