@@ -9,25 +9,23 @@ e em que mês elas ocorreram (mostrar o mês por extenso: Exemplo de saída:
  3 – março
  6 – junho
 
-
 """
-# ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+
 
 lista_temp = []
 
-lista_temp.append(float(input("Digite a temperatura para o mês de janeiro: "))) #Recebe as temperaturas e adiciona ao final da lista
-lista_temp.append(float(input("Digite a temperatura para o mês de fevereiro: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de março: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de abril: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de maio: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de junho: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de julho: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de agosto: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de setembro: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de outubro: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de novembro: ")))
-lista_temp.append(float(input("Digite a temperatura para o mês de dezembro: ")))
+meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+for mes in meses:
+    lista_temp.append(float(input(f"Digite a temperatura para o mês de {mes}: "))) # o metodo append Recebe as temperaturas e adiciona ao final da lista
+
 
 temp_media = (sum(lista_temp)/len(lista_temp))
 
-print(f"A temperatura média do ano foi de: {temp_media}°C")
+print(f"A temperatura média do ano foi de: {temp_media:.1f}°C")
+
+for temp in lista_temp: #
+    if temp > temp_media:
+        print(f"{temp} - {meses[lista_temp.index(temp)]}") #Aqui foi utilizado o metodo index para capturar a posição repectiva da temperatura e exibir o mês correspondente.
+
