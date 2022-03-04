@@ -73,6 +73,8 @@ print(f"\nO numero de alunos que fazem ambos os cursos é de: {len(set(alunos_am
 for i in set(alunos_ambos):
     print(i)
 
+print("\n")
+
 #5.	Quantos alunos estão matriculados somente em francês ou somente em inglês, mas não em ambos os cursos?
 
 print(f"\n\nO número total de alunos que fazem apenas um curso é de: {(len(alunos_frances_only)) + (len(alunos_ingles_only))}")
